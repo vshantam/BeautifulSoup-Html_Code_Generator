@@ -4,5 +4,5 @@ Requirements:
   3:-urllib.request(for python 3x) and urllib2 (for Python 2x)
 Installation Process:
   command:-pip install module_name
-  if already installed and needed upgrage:
+  if already installed and needed upgrade:
     command:-pip install module_name --upgrade
