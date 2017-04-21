@@ -1,0 +1,8 @@
+Requirements:
+  1:-Python 2x or Python 3x
+  2:-BeautifulSoup
+  3:-urllib.request(for python 3x) and urllib2 (for Python 2x)
+Installation Process:
+  command:-pip install module_name
+  if already installed and needed upgrage:
+    command:-pip install module_name --upgrade
