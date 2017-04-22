@@ -22,7 +22,7 @@ def main():
                 link_count=len(soup.find_all("a"))#counting the number of hyertext link
                 print("The Hyper link present in the page are {}".format(link_count))
                 for i in range(len(soup.find_all("a"))):
-                    print("For {}::The url is ::{}".format(soup.find_all("a")[i].text,soup.find_all("a")[i].get('href')))#Displaying the hyper text links with their links
+                    print("For {}::The url is ::{}".format(soup.find_all("a")[i].text.encode('utf-8'),soup.find_all("a")[i].get('href').encode('utf-8')))#Displaying the hyper text links with their links
                 choice=input("Do you Wish to continue?(Yes/No)".strip())
                 choice=choice.lower()[0]
         except KeyboardInterrupt:
