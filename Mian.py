@@ -1,3 +1,5 @@
+#usr/bin/bash/Python3
+"""UTF-8 encoding"""
 import sys
 import urllib.request
 from urllib.request import urlopen
@@ -26,7 +28,7 @@ def main():
                 choice=input("Do you Wish to continue?(Yes/No)".strip())
                 choice=choice.lower()[0]
     except KeyboardInterrupt:
-            print("\n{0}Exiting Script\n{1}Interrupted by the user\n".format('\33[93m','\.33[1;35m'))#Taking care of Exceptions
+            print ("{}" .format('Exiting Script\nInterrupted by the user\n'))#Taking care of Exceptions
     
     except Exception as e:
         print("An Error occured\nPlease try again later\n")
