@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 
 def main():
     choice='y'
-    while(choice=='y'):
-        try:
+    try:
+        while(choice=='y'):
             url=""#Post your url here {or}
             url=input("Please enter the url for the web page that need to be parsed:\n")#input url for website
             if(url[:8]!='https://'):
@@ -25,12 +25,12 @@ def main():
                     print("For {}::The url is ::{}".format(soup.find_all("a")[i].text.encode('utf-8'),soup.find_all("a")[i].get('href').encode('utf-8')))#Displaying the hyper text links with their links
                 choice=input("Do you Wish to continue?(Yes/No)".strip())
                 choice=choice.lower()[0]
-        except KeyboardInterrupt:
-                print("\n{0}Exiting Script\n{1}Interrupted by the user\n".format('\33[93m','\.33[1;35m'))#Taking care of Exceptions
+    except KeyboardInterrupt:
+            print("\n{0}Exiting Script\n{1}Interrupted by the user\n".format('\33[93m','\.33[1;35m'))#Taking care of Exceptions
     
-        except Exception as e:
-            print("An Error occured\nPlease try again later\n")
-            print("Error code:{}".format(str(e)))
+    except Exception as e:
+        print("An Error occured\nPlease try again later\n")
+        print("Error code:{}".format(str(e)))
 
 if __name__=='__main__':
     main()
